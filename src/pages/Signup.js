@@ -134,7 +134,7 @@ const Signup = () => {
                 generalErrors.push(`${field}: ${errors[field].join(', ')}`);
               } else {
                 generalErrors.push(`${field}: ${errors[field]}`);
-              }
+            }
             }
           });
           
@@ -178,30 +178,30 @@ const Signup = () => {
         <form onSubmit={handleSubmit}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
-              <TextField
-                fullWidth
-                label="First Name"
-                name="first_name"
-                value={formData.first_name}
-                onChange={handleInputChange}
-                required
-                inputProps={{ maxLength: 150 }}
+                              <TextField
+                  fullWidth
+                  label="First Name"
+                  name="first_name"
+                  value={formData.first_name}
+                  onChange={handleInputChange}
+                  required
+                  inputProps={{ maxLength: 150 }}
                 error={!!fieldErrors.first_name}
                 helperText={fieldErrors.first_name || ''}
-              />
+                />
             </Grid>
             <Grid item xs={12} sm={6}>
-              <TextField
-                fullWidth
-                label="Last Name"
-                name="last_name"
-                value={formData.last_name}
-                onChange={handleInputChange}
-                required
-                inputProps={{ maxLength: 150 }}
+                              <TextField
+                  fullWidth
+                  label="Last Name"
+                  name="last_name"
+                  value={formData.last_name}
+                  onChange={handleInputChange}
+                  required
+                  inputProps={{ maxLength: 150 }}
                 error={!!fieldErrors.last_name}
                 helperText={fieldErrors.last_name || ''}
-              />
+                />
             </Grid>
             <Grid item xs={12}>
               <TextField

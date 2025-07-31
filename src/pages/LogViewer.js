@@ -41,7 +41,7 @@ const LogViewer = () => {
       
       // Ensure we have an array
       if (Array.isArray(tripLogs)) {
-        setLogs(tripLogs);
+      setLogs(tripLogs);
       } else {
         console.error('Trip logs is not an array:', tripLogs);
         setLogs([]);

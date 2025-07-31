@@ -104,7 +104,7 @@ const Login = () => {
                 generalErrors.push(`${field}: ${errors[field].join(', ')}`);
               } else {
                 generalErrors.push(`${field}: ${errors[field]}`);
-              }
+            }
             }
           });
           
